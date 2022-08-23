@@ -15,16 +15,17 @@ export const App = () => {
       case 'good':
         goodIncrement(p => p + 1);
         break;
-    }
-    switch (name) {
+
       case 'neutral':
         neutralIncrement(p => p + 1);
         break;
-    }
-    switch (name) {
+
       case 'bad':
         badIncrement(p => p + 1);
         break;
+
+      default:
+        return;
     }
   };
 
